@@ -1,0 +1,124 @@
+body {
+   background-color: lightgray; 
+   
+}
+.container{
+    display:grid;
+    width:390px;
+    height: 800px;
+    background-color: #fff;
+    grid-template-columns: [first] 54px [line2] 121px [line3] 41px [col4-start] 121px [five] 50px [end];
+    grid-template-rows: [row1-start] 12px [row1-end] 41px [third-line] 10px [forth-line] 12px [fifth-line] 46px [six-line] 177px [seven] 75px [eight] 419px;
+    margin:0 auto;
+}
+.title{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: row1-end;
+  grid-row-end: 3;
+  /* background-color: orange; */
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+  font-family: roboto;
+  color:#0057FF;
+  font-weight: 600;
+}
+.line{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end:4;
+    height:12px;
+    margin-top:12px;
+    border-radius: 10px;
+    background:#FF0000;
+
+}
+.player{
+    grid-column-start:2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end:6;
+    width:121px;
+    background:#0057FF;
+    border-radius: 10px;
+    
+}
+.computer{
+    grid-column-start:4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end:6;
+    width:121px;
+    background:#ef5f5f;
+    border-radius: 10px;
+    
+}
+.players{
+    text-align: center;
+    font-weight: 400;
+    font-family: roboto;
+    font-size: 16px;
+    color: white;;
+}
+.players img{
+    display: block;
+    margin:10px auto;
+    width:73px;
+    height:86px;
+}
+.board{
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end:8;
+    background-image: linear-gradient(#FF0000, #0080F6);
+    margin: 0 23px;
+    display: grid;
+    /* grid-template-columns: [first] 17px [second] 93px [third] 17px [forth] 93px [fifth] 17px [sixth] 93px [seven] 17px;
+    grid-template-rows: [first] 22px [second] 103px [third] 26px [forth] 103px [fifth] 26px [six] 103px */
+    grid-template-columns: auto auto auto;
+    width:344px;
+
+}
+.board > div{
+    background-color: #f1f1f1;;
+    margin:17px 13px;
+    height:100px;
+    width:89px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+.x {
+    background-image: url("/tic-tac-toe/assets/images/X.png");
+    background-position: center;
+    background-repeat:no-repeat;
+   
+
+}
+.circle{
+    display: block;
+    background-image: url("/tic-tac-toe/assets/images/o.png");
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.divider{
+    display: block;
+    width:77px;
+    height:2px;
+    background-color: white;
+    margin:5px auto 0px auto;
+}
+.symbol{
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: -8px auto 10px auto;
+}
+.symbol img{
+    width:38px;
+    height: 38px;
+    
+}
