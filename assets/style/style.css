@@ -92,7 +92,7 @@ body {
 
 }
 .x {
-    background-image: url("/tic-tac-toe/assets/images/X.png");
+    background-image: url("./assets/images/X.png");
     background-position: center;
     background-repeat:no-repeat;
    
@@ -100,7 +100,7 @@ body {
 }
 .circle{
     display: block;
-    background-image: url("/tic-tac-toe/assets/images/o.png");
+    background-image: url("./assets/images/o.png");
     background-position: center;
     background-repeat:no-repeat;
 }
